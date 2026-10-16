@@ -21,8 +21,7 @@ const API_KEY = process.env.OLLAMA_API_KEY || "";
 const MODEL = process.env.OLLAMA_MODEL || "gpt-oss:120b";
 const PORT = Number(process.env.PORT) || 3000;
 const IS_CLOUD = /^https:\/\/ollama\.com$/i.test(HOST);
-const PUBLIC_DIR = path.join(__dirname, "public");
-
+const PUBLIC_DIR = path.join(__dirname, "frontend", "public");
 const MIME = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
